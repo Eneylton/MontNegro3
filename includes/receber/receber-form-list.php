@@ -201,7 +201,7 @@ foreach ($paginas as $key => $pagina) {
                      <div class="row my-7">
                         <div class="col">
 
-                           <label>Buscar por Rota</label>
+                           <label>Buscar por Clientes</label>
                            <input type="text" class="form-control" name="buscar" value="<?= $buscar ?>">
 
                         </div>

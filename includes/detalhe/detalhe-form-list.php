@@ -69,7 +69,7 @@ foreach ($entregadores as $item) {
                       <td style="display:none">' . $item->codigo . '</td>
                       <td style="text-transform:uppercase">' . $item->codigo . '</td>
                       <td style="text-transform:uppercase">' . $item->entregador . '</td>
-                      <td style="text-transform:uppercase">' . $item->data_entrega . '</td>
+                      <td style="text-transform:uppercase">' .  date('d/m/Y  Á\S  H:i:s', strtotime($item->data_entrega)) . '</td>
                       <td style="text-transform:uppercase; text-align:center"> <h5><span class="badge badge-pill badge-success">' . $item->entrega . '</span></h5> </td>
                       <td style="text-transform:uppercase; text-align:center"> <h5><span class="badge badge-pill badge-danger">' . $item->devolucao  . '</span></h5> </td>
                       <td style="text-transform:uppercase; text-align:center"> <h5><span class="badge badge-pill badge-dark">' . $sub_total  . '</span></h5> </td>

@@ -29,7 +29,7 @@ $qtd = Receber:: getQtd($where);
 
 $pagination = new Pagination($qtd, $_GET['pagina'] ?? 1, 5);
 
-$listar = Receber::getListReceber($where, 'cli.nome ASC',$pagination->getLimit());
+$listar = Receber::getListReceber($where, 'r.id DESC',$pagination->getLimit());
 
 $clientes = Cliente :: getList(null,'nome ASC',null);
 
