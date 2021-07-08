@@ -136,7 +136,7 @@ foreach ($listar as $item) {
       default:
          $cor2 = "badge-light";
          $qtd = $item->qtd;
-         $msn = "";
+         $msn = " DISPONIVEIS PARA ENTREGA";
          $disabled = "";
          break;
    }
@@ -167,7 +167,7 @@ foreach ($listar as $item) {
 }
 
 $resultados = strlen($resultados) ? $resultados : '<tr>
-                                                     <td colspan="5" class="text-center" > Nenhum item recebido até o momento !!!!! </td>
+                                                     <td colspan="6" class="text-center" > Nenhum item recebido até o momento !!!!! </td>
                                                      </tr>';
 
 

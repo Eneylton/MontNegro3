@@ -147,9 +147,9 @@ class Database
         entregadores AS t
             INNER JOIN
         entrega AS e ON (t.id = e.entregadores_id)
-        INNER JOIN
+        LEFT JOIN
         devolucao AS dev ON (t.id = dev.entregadores_id)
-          INNER JOIN
+        LEFT JOIN
         logisticas AS l ON (t.id = l.entregadores_id)
         ' . $where . ' ' . $order . ' ' . $limit;
 

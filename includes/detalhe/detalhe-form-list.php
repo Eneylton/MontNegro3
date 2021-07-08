@@ -59,7 +59,7 @@ foreach ($entregadores as $item) {
 
    $sub =   $sub_total * 2 ;
 
-   $calc = $sub * 2 ; 
+   $calc += $sub ; 
 
    $bruto += $sub_total;
 
@@ -195,7 +195,7 @@ $resultados = strlen($resultados) ? $resultados : '<tr>
 
                   <div class="d-flex flex-row justify-content-end">
                      <span class="mr-2">
-                        <i class="fas fa-square text-success"></i> Entrga: <?= $valor_dia ?>
+                        <i class="fas fa-square text-success"></i> Entrega: <?= $valor_dia ?>
                      </span>
 
                      <span>
